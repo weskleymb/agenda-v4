@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html 
+    xmlns:th="http://www.thymeleaf.org" 
+    lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contatos</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr th:each="contato : ${contatos}">
+                <td th:text="${contato.id}"></td>
+                <td th:text="${contato.nome}"></td>
+                <td th:text="${contato.fone}"></td>
+            </tr>
+        </table>
+    </body>
+</html>
