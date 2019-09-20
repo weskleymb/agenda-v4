@@ -1,7 +1,7 @@
 ### MVN ###
 HELP.md
-target/
-.mvn/**
+/target/
+/.mvn/
 mvnw
 mvnw.cmd
 !**/src/main/**
