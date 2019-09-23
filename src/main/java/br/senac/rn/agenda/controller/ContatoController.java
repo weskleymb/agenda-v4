@@ -24,6 +24,7 @@ public class ContatoController {
         model.addAttribute("contato", contato);
         List<Contato> contatos = service.listaTodos();
         model.addAttribute("contatos", contatos);
+        System.out.println(contato);
         return "contatos";
     }
 
