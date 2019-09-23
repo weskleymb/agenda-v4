@@ -21,4 +21,12 @@ public class ContatoService {
         return repository.save(contato);
     }
 
+    public void removePorId(Long id) {
+        repository.deleteById(id);
+    }
+
+    public Contato listaPorId(Long id) {
+        return repository.findById(id).get();
+    }
+
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -24,7 +25,6 @@ public class ContatoController {
         model.addAttribute("contato", contato);
         List<Contato> contatos = service.listaTodos();
         model.addAttribute("contatos", contatos);
-        System.out.println(contato);
         return "contatos";
     }
 
@@ -32,6 +32,21 @@ public class ContatoController {
     public String salva(Contato contato) {
         service.salva(contato);
         return "redirect:/contatos";
+    }
+
+    @GetMapping("/{id}/remove")
+    public String remove(@PathVariable("id") Long id) {
+        service.removePorId(id);
+        return "redirect:/contatos";
+    }
+
+    @GetMapping("/{id}/edita")
+    public String edita(@PathVariable("id") Long id, Model model) {
+        Contato contato = service.listaPorId(id);
+        model.addAttribute("contato", contato);
+        List<Contato> contatos = service.listaTodos();
+        model.addAttribute("contatos", contatos);
+        return "contatos";
     }
 
 }
