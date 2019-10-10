@@ -16,31 +16,31 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.8.RELEASE</version>
-        <relativePath/>
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.springframework.boot</groupId>-->
+<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
+<!--        <version>2.1.8.RELEASE</version>-->
+<!--        <relativePath/>-->
+<!--    </parent>-->
 
     <dependencies>
         <!-- SPRING WEB -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-<!--            <version>2.1.9.RELEASE</version>-->
+            <version>2.1.8.RELEASE</version>
         </dependency>
         <!-- SPRING THYMELEAF -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-<!--            <version>2.1.9.RELEASE</version>-->
+            <version>2.1.8.RELEASE</version>
         </dependency>
         <!-- SPRING JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-<!--            <version>2.1.9.RELEASE</version>-->
+            <version>2.1.8.RELEASE</version>
         </dependency>
         <!-- MARIADB -->
         <dependency>
@@ -70,7 +70,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
-<!--            <version>2.1.9.RELEASE</version>-->
+            <version>2.1.8.RELEASE</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
