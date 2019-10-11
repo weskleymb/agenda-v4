@@ -10,7 +10,7 @@ public class AgendaApplicationConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4200")
+                .allowedOrigins("https://i2241-agenda-front.herokuapp.com")
                 .allowedMethods("GET", "POST");
     }
 
